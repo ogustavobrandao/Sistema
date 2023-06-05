@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ Route::get('/', function(){
 });
 
 Route::prefix('entradas')->group(function () {
-    
+
     Route::get('/', [EntradasController::class, 'index'])->name('entradas.index');
     Route::get('/create', [EntradasController::class, 'create'])->name('entradas.create');
     Route::post('/store', [EntradasController::class, 'store'])->name('entradas.store');
@@ -39,4 +40,4 @@ Route::prefix('ToDoList')->group(function(){
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
