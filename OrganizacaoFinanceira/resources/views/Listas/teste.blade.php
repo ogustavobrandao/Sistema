@@ -15,8 +15,8 @@
     <table id="tableAtividades" style="width: 100%">
         <thead style="background-color: lightgray; border-radius: 15px">
         <tr>
-            <th class="align-middle" scope="col">Atividades</th>
-            <th class="align-middle" scope="col">Status</th>
+         <th class="align-middle" scope="col">Atividades</th>
+         <th class="align-middle" scope="col">Status</th>
         </tr>
         </thead>
 
